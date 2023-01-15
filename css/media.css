@@ -1,0 +1,100 @@
+/* Медиа запрос: для экранов до 1140рх */
+@media (max-width: 1140px) {
+    .card {
+        width: calc(50% - 15px);/* карточка занимает половину ширины и + отступы по 15 сбоку итого 30 должно быть в середине между карточками */
+    }
+    .footer {
+        padding-top: 40px; /*отступ сверху в блоке подвал */
+        padding-bottom: 60px; /* отступ снизу в блоке подвал */
+    }
+    .footer-row {
+        flex-direction: column-reverse; /* ряд в колонку и в обратном порядке внутри блока подвал */
+        align-items: center; /* колонка по центру в блоке подвал */
+        text-align: center; /* текст в подвале по центру */
+    }
+    .footer-col {
+        margin-bottom: 50px; /* отступ вниз между блоками в колонке */
+    }
+    .footer-col:first-child {
+        margin-bottom: 0; /* убираем отступ снизу у последнего блока в подвале */
+    }
+}
+/* Медиа запрос: для экранов до 760рх(mobile 320 по макету) */
+@media (max-width: 760px) {
+    .header-title {
+        font-size: 32px;
+    }
+    .header-subtitle {
+        font-size: 14px;
+    }
+    .portfolio {
+        padding-top: 40px; /* отступ сверху от блока*/
+        padding-bottom: 60px; /* отступ снизу от блока */
+    }
+    .portfolio-header {
+        font-size: 32px; /* размер заголовка */
+        margin-bottom: 30px; /* отступ снизу от заголовка */
+    }
+    .portfolio-cards-wrapper {
+        justify-content: center; /* карточки по центру */
+    }
+    .card {
+        max-width: 530px; /* с 540рх на 530 тк паддинги уже не по 20=40,а по 15+15=30 */
+        width: 100%; /* ширина карточки не больше 540 но выросла до 540 */
+    }
+    .card:nth-last-child(2) { /* второй элемент с конца */
+        margin-bottom: 30px; /* отступ снизу */
+    }
+    .card-link {
+        padding: 15px; /* внутренний отступ в карточке по бокам от картинки */
+    }
+    .card-img {
+        margin-bottom: 10px; /* отступ под картинкой внутри карточки */
+    }
+    .card-title {
+        font-size: 18px; /* размер заголовка в карточке */
+        margin-bottom: 10px; /* отступ от заголовка внутри карточки */
+    }
+    .card p {
+        font-size: 14px; /* уменьшили размер в абзаце в карточке */
+    }
+    .footer-copyright-name {
+        font-size: 18px; /* размер шрифта в подвале юрий ключевский */
+        margin-bottom: 5px; /* отступ снизу от текста копирайт юрий ключевский */
+    }
+    .footer-copyright p {
+        font-size: 14px; /* текст блока копирайт */
+    }
+    .footer-icons p {
+        font-size: 14px; /* текст блока футер айконс */
+    }
+    .footer-icons-row {
+        justify-content: center; /* иконки по центру в подвале */
+    }
+    .footer-contacts p {
+        font-size: 14px; /* размер шрифта текста "напишите мне" */
+        margin-top: 0; /* убрали отступ вниз от блока "напишите мне" */
+        margin-left: auto; /* центрируем */
+        margin-right: auto; /* центрируем */
+        max-width: 200px; /* ограничение */
+    }
+
+    .project {
+        padding: 40px 0 60px; /* внутренняя страница forest-travel.сверху отступ 40,слева справа 0, снизу 60 */
+    }
+    .project-header {
+        font-size: 28px; /* размер заголовка */
+        margin-bottom: 30px; /* отступ вниз от заголовка */
+    }
+    .project-img {
+        margin-bottom: 20px; /* отступ вниз от картинки */
+    }
+    .project-description { /* часть "верстка многостраничного.." */
+        margin-bottom: 50px; /* отступ от дескрипшена вниз */
+    }
+    .project-btn-back { /* кнопка вернуться назад */
+        padding: 0 10px; /* сверху снизу по 0, слева справа по 10 */
+        width: 100%; /* ширина кнопки */
+        max-width: 320px; /* макс ширина кнопки */
+    }
+}
