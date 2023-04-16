@@ -1,7 +1,7 @@
 $(window).on('load',function() {
 
     // Vide.js - video background
-    $('#header').vide('./video/cover', {
+    $('#header').vide('./video/cover2', {
         bgColor: '#1f2c25b'
     });
 });
